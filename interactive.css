@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300&family=Roboto:ital,wght@0,100;0,300;1,100&family=Rubik:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(228, 33%, 97%)
+}
+
+#bigGuy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#container {
+    background-color: hsl(223, 19%, 93%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+    width: 800px;
+    padding: 40px;
+}
+
+.chat {
+   background: white;
+    width: 460px;
+    height: 105px;
+    font-family: 'rubik', sans-serif;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.scrollBar {
+    background-color: hsl(228, 33%, 97%);
+    border-radius: 8px;
+    width: 23px;
+    height: 60px;
+    padding: 2px;
+    margin-top: 15px;
+    margin-left: 15px; 
+    line-height: 20px;
+}
+
+.scrollBar h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(238, 40%, 52%);
+    margin: -3px 0;
+}
+
+.scrollBar img {
+    margin:4px 4px; 
+   
+}
+
+.title{
+    margin-left: 55px;
+    margin-top: -85px;
+    display: flex;
+}
+
+#time {
+    font-family: "Roboto";
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.title h6 {
+    margin-left: 10px;
+    margin-top: 25px;
+    font-family: Rubik;
+}
+
+.user {
+    height: 25px;
+    width: 25px;
+    margin-top: 18px;
+}
+
+.reply {
+    width: 10px;
+    height: 10px;
+    margin-top: 28px;
+    margin-left: 170px;
+}
+
+#reply {
+    color: hsl(238, 40%, 52%);
+}
+
+.chatBody {
+    margin-left: 55px;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-family: "Roboto";
+    font-weight: lighter;
+    line-height: 15px;
+    opacity: 0.9;
+}
+
+.chat2 {
+    background: white;
+     width: 410px;
+     height: 105px;
+     font-family: 'rubik', sans-serif;
+     margin-bottom: 10px;
+     margin-left: 50px;
+     border-radius: 5px;
+ }
+
+ .title2{
+    margin-left: 55px;
+    margin-top: -85px;
+    display: flex;
+}
+
+.title2 h6 {
+    margin-left: 10px;
+    margin-top: 25px;
+    font-family: Rubik;
+}
+
+.reply2 {
+    width: 10px;
+    height: 10px;
+    margin-top: 28px;
+    margin-left: 110px;
+}
+
+#you {
+    font-family: 'Rubik';
+    font-size: 8px;
+    height: 13px;
+    background-color: hsl(212, 24%, 26%);
+    color: white;
+    padding: 0;
+    margin-right: 5px;
+}
+
+.delete {
+    width: 10px;
+    height: 10px;
+    margin-top: 28px;
+    margin-left: 30px;
+}
+
+.edit {
+    width: 10px;
+    height: 10px;
+    margin-top: 28px;
+    margin-left: 25px;
+}
+
+#edit {
+    color: hsl(238, 40%, 52%);
+}
+
+#deleted {
+    color: hsl(357, 100%, 86%);
+    border: none; 
+    background-color: white;
+    margin-top: 25px;
+    margin-left: 10px;
+    cursor: pointer;    
+}
+
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    background-color: white;
+    font-size: 13px;
+    width: 250px;
+    height: 170px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    text-align: left;
+    justify-content: left;
+
+}
+
+.modal h1 {
+    margin-bottom: 20px;
+}
+
+.modal p {
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.modal-container .modal .commentButton {
+    height: 35px;
+    width: 75px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Rubik';
+    font-size: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#cancel {
+    background-color: gray;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+#deletes {
+    background-color: hsl(358, 79%, 66%);
+    margin-right: 20px;
+}
+
+.vertical-line{
+    display: inline-block;
+    border-left: 1px solid hsl(239, 57%, 85%);
+    margin: 0 10px;
+    height: 210px;
+    margin-left: -400px;
+    margin-top: -230px;
+}
+
+#comment {
+    background-color: white;
+    width: 460px;
+    margin-top: 20px;
+    height: 85px;
+    border-radius: 5px;
+}
+
+#juliusomo {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+#commentSection {
+    margin-left: 55px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#multiLineInput {
+    width: 300px;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid hsl(239, 57%, 85%);
+    border-radius: 5px;
+    resize: none;
+    margin-left: -15px;
+}
+
+#send {
+    background-color: hsl(238, 40%, 52%);
+    height: 27px;
+    width: 58px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: -50px;
+    color: white;
+    font-family: 'Rubik';
+    font-size: 10px;
+}

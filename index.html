@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>interactive</title>
+        <link href="interactive.css" rel="stylesheet" type="text/css"> 
+      
+    </head>
+    <body>
+        <div id="bigGuy">
+    <div id="container">
+<section class="chat">
+         <div class="scrollBar">
+             <img src="images/icon-plus.svg">
+             <h6>12</h6>
+             <img src="images/icon-minus.svg">
+         </div>
+
+         <div class="title">
+         <img src="images/image-amyrobson.png" class="user">
+         <h6>amyrobson</h6>
+         <h6 id="time">1 month ago</h6>
+         <img src="images/icon-reply.svg" class="reply">
+         <h6 id="reply">Reply</h6>
+        </div>
+        <div class="chatBody"> 
+            <h6>Impressive! Though it seems the drag feature could be improved. But overall it<br>looks incredible. You've nailed the design and the responsiveness at various<br>breakpoints works really well.</h6> 
+         </div>
+</section>
+
+
+<section class="chat">
+    <div class="scrollBar">
+        <img src="images/icon-plus.svg">
+        <h6>5</h6>
+        <img src="images/icon-minus.svg">
+    </div>
+
+    <div class="title">
+    <img src="images/image-maxblagun.png" class="user">
+    <h6>amyrobson</h6>
+    <h6 id="time">2 weeks ago</h6>
+    <img src="images/icon-reply.svg" class="reply">
+    <h6 id="reply">Reply</h6>
+   </div>
+   <div class="chatBody"> 
+       <h6>Woah, your project looks awesome! How long have you been coding for? I'm still<br>new, but think I want to dive into React as well soon. Perhaps you can give me an<br>insight on where I can learn React? Thanks!</h6> 
+    </div>
+</section> 
+
+<section class="chat2">
+    <div class="scrollBar">
+        <img src="images/icon-plus.svg">
+        <h6>4</h6>
+        <img src="images/icon-minus.svg">
+    </div>
+
+    <div class="title2">
+        <img src="images/image-ramsesmiron.png" class="user">
+    <h6>ramsesmiron</h6>
+    <h6 id="time">1 weeks ago</h6>
+    <img src="images/icon-reply.svg" class="reply2">
+    <h6 id="reply">Reply</h6>
+    </div>
+    <div class="chatBody"> 
+        <h6>@maxblagun If you're still new, I'd recommend focusing on the<br>fundamentals of HTML, CSS, and JS before considering React. It's very<br>tempting to jump ahead but lay a solid foundation first.</h6> 
+     </div>
+</section>
+
+<section class="chat2">
+    <div class="scrollBar">
+        <img src="images/icon-plus.svg">
+        <h6>2</h6>
+        <img src="images/icon-minus.svg">
+    </div>
+
+    <div class="title2">
+        <img src="images/image-juliusomo.png" class="user">
+    <h6>juliusomo</h6>
+    <h6 id="you">you</h6>
+    <h6 id="time">2 days ago</h6>
+    <img src="images/icon-delete.svg" class="delete">
+   
+   
+    <button id="deleted">delete</button>
+    <div class="modal-container" id="modalContainer">
+        <div class="modal">
+            <h1>Delete Comment</h1>
+            <p>Are you sure you want to remove the comment?</p>
+            <button class="commentButton" id="cancel">NO, CANCEL.</button>
+            <button class="commentButton" id="deletes">YES, DELETE.</button>
+        </div>
+    </div>
+
+   <!-- <h6 id="delete">Delete</h6> -->
+
+    <img src="images/icon-edit.svg" class="edit">
+    <h6 id="edit">Edit</h6>
+    </div>
+    <div class="chatBody"> 
+        <h6>@ramsesmiron I couldn't agree more with this. Everything moves so<br>fast and it always seems like everyone knows the newest library/<br>framework. But the fundamentals are what stay constant.</h6> 
+     </div>
+</section>
+
+<span class="vertical-line"></span>
+
+<section id="comment">
+    <img src="image-juliusomo.png" id="juliusomo">
+
+
+    <form id="commentSection">
+        <label for="multiLineInput">
+            <textarea id="multiLineInput" placeholder="Add a comment..."></textarea>
+          </label>
+<br>
+          <button type="submit" id="send">SEND</button>
+    </form>
+</section>
+
+</div>
+</div>
+
+
+
+
+<script src="interactive.js"></script>
+    </body>
+</html>
